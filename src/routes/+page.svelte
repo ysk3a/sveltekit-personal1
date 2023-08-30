@@ -7,40 +7,14 @@
 	const removeTab = (index: number) => (tabs = tabs.filter((t, i) => i !== index));
 </script>
 
-<div class="container h-full flex">
-	<TabGroup>
-		{#each tabs as tab, i}
-			<Tab label={tab} bind:group={active} name={tab} value={i}>
-				<svelte:fragment slot="lead">(icon)</svelte:fragment>
-				<span>{tab}</span>
-			</Tab>
-			<!-- <svelte:fragment slot="panel">
-				<button class="btn variant-outline-warning" type="button" on:click={() => removeTab(i)}
-					>Remove {tab}</button
-				>
-		</svelte:fragment> -->
-		{/each}
-		<button class="btn variant-filled-primary" type="button" on:click={addTab}>Add Tab</button>
-
-		<svelte:fragment slot="panel">
-			{#each tabs as tab, i}
-				<button class="btn variant-outline-warning" type="button" on:click={() => removeTab(i)}
-					>Remove {tab}</button
-				>
-			{/each}
-		</svelte:fragment>
-	</TabGroup>
-
-	<div class="space-y-10 text-center flex flex-col items-center">
-		<select class="select" bind:value={active} placeholder="Change Tab">
-			{#each tabs as tab, i}
-				<option value={i}>{tab}</option>
-			{/each}
-		</select>
-	</div>
-</div>
+<div class="container h-full flex" />
 
 <style lang="postcss">
+	/* .my-add-btn {
+		position: sticky;
+		right: 40px;
+		border-radius: 8px;
+	} */
 	/* figure {
 		@apply flex relative flex-col;
 	}
