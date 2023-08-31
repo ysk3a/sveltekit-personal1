@@ -74,7 +74,10 @@
 						</svelte:fragment>
 						<span class="clip-tab-title">{tab}</span>
 						<span class="my-close-icon absolute h-0 w-auto left-[-28px] hidden group-hover:block">
-							<button class="btn-icon w-[25px] variant-ringed-tertiary !bg-[darkslateblue] rounded">
+							<button
+								class="btn-icon w-[25px] variant-ringed-tertiary !bg-[darkslateblue] rounded"
+								on:click={() => removeTab(i)}>
+								<!-- c0bra.github.io/svelma/components/tabs -->
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									class="icon icon-tabler icon-tabler-x"
