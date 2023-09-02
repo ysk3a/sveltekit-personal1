@@ -15,7 +15,3 @@ declare namespace svelteHTML {
 		"on:finalize"?: (event: CustomEvent<DndEvent<ItemType>> & { target: EventTarget & T }) => void;
 	}
 }
-type ItemType = {
-	id: number;
-	label: string;
-}
