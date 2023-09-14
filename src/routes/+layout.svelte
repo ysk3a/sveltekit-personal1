@@ -255,6 +255,8 @@
 				<a class="btn btn-sm variant-ghost-surface" href="/" target="_blank" rel="noreferrer">
 					Some Btn
 				</a>
+				<a class="btn btn-sm variant-ghost-surface" href="/"> home </a>
+				<a class="btn btn-sm variant-ghost-surface" href="/gallery-demo"> gallery demo </a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
